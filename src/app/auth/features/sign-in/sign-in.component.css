@@ -11,6 +11,10 @@
 .login{
   display: grid;
   grid-template-columns: repeat(2,1fr);
+/* Borde suave con sombra */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados para un efecto más suave */
 }
 
 .login__imagen {
