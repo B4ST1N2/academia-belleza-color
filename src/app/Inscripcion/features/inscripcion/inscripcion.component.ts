@@ -24,5 +24,12 @@ export default class InscripcionComponent {
     this._router.navigateByUrl('/inicio')
   };
 
+  redirectToWhatsApp() {
+    const phoneNumber = '573128776356'; // Reemplaza con el número de teléfono de WhatsApp
+    const message = 'Hola, Termine mi matricula.'; // Mensaje predeterminado
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+  }
+
 
 }

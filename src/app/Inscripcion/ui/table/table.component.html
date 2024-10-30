@@ -1,19 +1,17 @@
-<table class="table">
-  <thead>
+<table class="tabla">
+  <thead class="tabla__titulos">
     <tr>
-      <th scope="col">ID</th>
       <th scope="col">CURSO</th>
       <th scope="col">MUNICIPIO</th>
-      <th scope="col">ESTADO</th>
+      <th scope="col">PAGAR</th>
     </tr>
   </thead>
-  <tbody class="table-group-divider">
+  <tbody class="tabla__cuerpo">
     @for(task of tasks();track task.id){
       <tr>
-        <th scope="row">{{task.id}}</th>
-        <td>{{task.curso}}</td>
+        <td scope="row">{{task.curso}}</td>
         <td>{{task.municipio}}</td>
-        <td>Prematriculado</td>
+        <td><a class="pago" href="https://mpago.li/32rY7J5">Pagar Aqui</a></td>
       </tr>
     } @empty{
       <tr>

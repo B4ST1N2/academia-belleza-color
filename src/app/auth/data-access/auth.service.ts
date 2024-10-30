@@ -19,6 +19,9 @@ export interface User{
 })
 
 export class AuthService {
+  logout() {
+    throw new Error('Method not implemented.');
+  }
 
   private _auth = inject(Auth);
   private currentUser: FirebaseUser | null = null;
@@ -34,6 +37,10 @@ export class AuthService {
         this.currentUser = null;
       }
     });
+  }
+
+  isLoggedIn(): boolean {
+    return this.currentUser !== null;
   }
 
   // Obtener el UID del usuario autenticado

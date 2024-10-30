@@ -1,0 +1,40 @@
+.tabla{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.tabla__titulos{
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  background-color: var(--backgroud-color);
+  border-bottom: solid 1px black;
+}
+
+
+.tabla__cuerpo{
+  font-family: var(--primary-font);
+  background-color: var(--backgroud-color);
+
+}
+
+
+
+.tabla__cuerpo td, .tabla__cuerpo th {
+  padding: 1rem 0;
+  border-bottom: solid 1px rgb(159, 159, 159);
+}
+
+.pago{
+  color: white;
+  border: solid 1px white;
+
+  background-color: var(--secondary-color);
+  padding: .3rem 2rem;
+  border-radius: 3rem;
+}
+
+.pago:hover{
+  background-color: var(--primary-color);
+}

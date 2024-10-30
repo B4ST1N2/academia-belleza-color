@@ -1,10 +1,9 @@
 <section class="contenedor">
-  <div class="button">
-    <button (click)="logOut()" type="button" class="btn btn-danger">
-      salir
+  <div class="salir">
+    <button (click)="logOut()" type="button" class="x">
+      x
     </button>
   </div>
-
 
   <div class="table">
     <a routerLink="/inscripcion/new" type="button" class="btn btn-success">Matriculate</a>
@@ -13,7 +12,14 @@
     }@else{
       <app-table [tasks]="tasksService.getTasks()"/>
     }
+  </div>
 
+  <div class="texto">
+    <h2>
+      Tienes dos Formas de pagar la Matricula:
+    </h2>
+    <p>1. Dando a la opcion pagar, recordar mandar el comprobante al WhatsApp: <button (click)="redirectToWhatsApp()" class="btn btn-primary">WhatsApp</button></p>
+    <p>2. Ir el dia de matriculas y pagar en persona</p>
   </div>
 </section>
 

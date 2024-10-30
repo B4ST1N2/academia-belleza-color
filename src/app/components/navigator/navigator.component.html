@@ -10,6 +10,7 @@
       <a routerLink="/nosotros" routerLinkActive="active" class="element">Sobre Nosotros</a>
       <a routerLink="/cursos" routerLinkActive="active" class="element">Cursos</a>
       <a routerLink="/matriculas" routerLinkActive="active" class="element">Matriculas</a>
+      <a *ngIf="isLoggedIn" (click)="logout()" class="element">Salir</a>
 
     </div>
   </nav>

@@ -4,20 +4,24 @@
 
 
 .table{
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
-.button{
+.salir{
   display: flex;
-  justify-content: end;
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
+  justify-content:flex-end;
 }
 
-button{
-  font-size: 15px;
-  padding: 3px 15px;
-  margin-bottom: 2rem;
+.x{
+  color: var(--secondary-color);
+  font-size: 20px;
 }
 
+.texto{
+  max-width: 65%;
+  margin: 0 auto;
+  margin-top: 10rem;
+}
