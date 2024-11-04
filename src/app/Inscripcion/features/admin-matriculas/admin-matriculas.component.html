@@ -1,7 +1,27 @@
-<section class="admin-table-container">
+<section class="admin-container">
   <h2>Lista de Matriculados</h2>
-  <div class="table-scroll">
-    <table class="admin-table">
+
+  <div class="filters">
+    <label for="municipioFilter">Filtrar por Municipio:</label>
+    <select [(ngModel)]="municipioFilter" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option value="Jardin">Jardín</option>
+      <option value="Don Matias">Don Matias</option>
+      <option value="Santa Fé de Antioquia">Santa Fé de Antioquia</option>
+    </select>
+
+    <label for="cursoFilter">Filtrar por Curso:</label>
+    <select [(ngModel)]="cursoFilter" (change)="applyFilters()">
+      <option value="">Todos</option>
+      <option value="Cejas y Pestañas">Cejas y Pestañas</option>
+      <option value="Maquillaje Profesional">Maquillaje Profesional</option>
+      <option value="Acrílico Basico">Acrílico Basico</option>
+      <option value="Acrílico Avanzado">Acrílico Avanzado</option>
+    </select>
+  </div>
+
+  <div class="table-container">
+    <table class="styled-table">
       <thead>
         <tr>
           <th>Nombre</th>
@@ -24,4 +44,5 @@
       </tbody>
     </table>
   </div>
+
 </section>
