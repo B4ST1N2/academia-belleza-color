@@ -1,0 +1,27 @@
+<section class="admin-table-container">
+  <h2>Lista de Matriculados</h2>
+  <div class="table-scroll">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Correo</th>
+          <th>Celular</th>
+          <th>Curso</th>
+          <th>Municipio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of datosMatriculas$ | async">
+          <td>{{ dato.nombre }}</td>
+          <td>{{ dato.apellido }}</td>
+          <td>{{ dato.correo }}</td>
+          <td>{{ dato.celular }}</td>
+          <td>{{ dato.curso }}</td>
+          <td>{{ dato.municipio }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

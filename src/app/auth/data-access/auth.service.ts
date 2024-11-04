@@ -66,10 +66,12 @@ export class AuthService {
       phone: user.phone,
       email: user.email,
       uid: userCredential.user.uid, // Guardar el UID del usuario
+      role: 'user' // Asignar el rol "user" por defecto
     });
 
     return userCredential;
   }
+
 
   signIn(user: User){
     return signInWithEmailAndPassword(this._auth, user.email, user.password)
